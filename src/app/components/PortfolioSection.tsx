@@ -662,7 +662,8 @@ export function PortfolioSection() {
                       ))}
                     </div>
 
-                    <div>
+                    <div className="flex flex-wrap gap-3">
+                      {/* View Case Study */}
                       <Button
                         onClick={() => openProject(project)}
                         className="group"
@@ -670,6 +671,38 @@ export function PortfolioSection() {
                         View Case Study
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
+
+                      {/* GitHub */}
+                      {project.github && (
+                        <Button size="sm" variant="outline" asChild>
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="mr-2 h-4 w-4" />
+                            View on GitHub
+                          </a>
+                        </Button>
+                      )}
+
+                      {/* Demo */}
+                      {project.demo && (
+                        <Button
+                          size="sm"
+                          asChild
+                          className="bg-[#05051a] hover:bg-[#11112f]"
+                        >
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="mr-2 h-4 w-4" />
+                            Live Demo
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
