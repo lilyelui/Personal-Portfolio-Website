@@ -22,7 +22,7 @@ export function Footer() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      link: "https://mail.google.com/mail/?view=cm&fs=1&to=aulialily9888@gmail.com",
+      type: "email",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
@@ -35,6 +35,23 @@ export function Footer() {
       link: "https://github.com/lilyelui",
     },
   ];
+  const openEmail = () => {
+    const email = "aulialily9888@gmail.com";
+    const subject = encodeURIComponent("Software Engineer Opportunity");
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Mobile → gunakan email handler
+      window.location.href = `mailto:${email}?subject=${subject}`;
+    } else {
+      // Desktop → langsung buka Gmail Compose
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`,
+        "_blank",
+      );
+    }
+  };
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -53,18 +70,34 @@ export function Footer() {
             </p>
 
             <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors"
-                >
-                  {social.icon}
-                </a>
-              ))}
+              {socialLinks.map((social, index) => {
+                if (social.type === "email") {
+                  return (
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={openEmail}
+                      aria-label={social.label}
+                      className="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors"
+                    >
+                      {social.icon}
+                    </button>
+                  );
+                }
+
+                return (
+                  <a
+                    key={index}
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors"
+                  >
+                    {social.icon}
+                  </a>
+                );
+              })}
             </div>
           </div>
 
