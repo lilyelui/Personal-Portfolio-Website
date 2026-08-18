@@ -63,9 +63,8 @@ export function HeroSection() {
 
               <Button size="lg" variant="outline" asChild>
                 <a
-                  href="/cv/Aulia-Ramadhani-CV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/Aulia-Ramadhani_Software-Engineer_CV.pdf"
+                  download="Aulia-Ramadhani_Software-Engineer_CV.pdf"
                 >
                   Download CV
                   <Download className="ml-2 h-5 w-5" />
