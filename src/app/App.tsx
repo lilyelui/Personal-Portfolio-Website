@@ -1,11 +1,11 @@
-import { Header } from '@/app/components/Header';
-import { HeroSection } from '@/app/components/HeroSection';
-import { AboutSection } from '@/app/components/AboutSection';
-import { PortfolioSection } from '@/app/components/PortfolioSection';
-import { ServicesSection } from '@/app/components/ServicesSection';
-import { CredentialsSection } from '@/app/components/CredentialsSection';
-import { ContactSection } from '@/app/components/ContactSection';
-import { Footer } from '@/app/components/Footer';
+import { Header } from "./components/Header";
+import { HeroSection } from "./components/HeroSection";
+import { AboutSection } from "./components/AboutSection";
+import { PortfolioSection } from "./components/PortfolioSection";
+import { ServicesSection } from "./components/ServicesSection";
+import { CredentialsSection } from "./components/CredentialsSection";
+import { ContactSection } from "./components/ContactSection";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
