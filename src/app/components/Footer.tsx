@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Heart } from 'lucide-react';
+import { Mail, Linkedin, Github, Heart } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,34 +6,34 @@ export function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const navLinks = [
-    { label: 'Home', section: 'hero' },
-    { label: 'About', section: 'about' },
-    { label: 'Portfolio', section: 'portfolio' },
-    { label: 'Services', section: 'services' },
-    { label: 'Contact', section: 'contact' }
+    { label: "Home", section: "hero" },
+    { label: "About", section: "about" },
+    { label: "Portfolio", section: "portfolio" },
+    { label: "Services", section: "services" },
+    { label: "Contact", section: "contact" },
   ];
 
   const socialLinks = [
     {
       icon: <Mail className="h-5 w-5" />,
-      label: 'Email',
-      link: 'mailto:aulialily9888@gmail.com'
+      label: "Email",
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=aulialily9888@gmail.com",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
-      label: 'LinkedIn',
-      link: 'https://linkedin.com'
+      label: "LinkedIn",
+      link: "https://www.linkedin.com/in/aulia-ramadhani-54b8272a2",
     },
     {
       icon: <Github className="h-5 w-5" />,
-      label: 'GitHub',
-      link: 'https://github.com'
-    }
+      label: "GitHub",
+      link: "https://github.com/lilyelui",
+    },
   ];
 
   return (
@@ -42,10 +42,16 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Aulia Ramadhani</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Aulia Ramadhani
+            </h3>
+
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Full Stack Developer passionate about creating user-centered, high-quality web applications.
+              Software Engineer focused on building reliable software systems,
+              backend services, system integrations, and practical technology
+              solutions.
             </p>
+
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -83,13 +89,14 @@ export function Footer() {
             <h4 className="font-medium text-white mb-4">Contact</h4>
             <div className="space-y-3">
               <a
-                href="mailto:aulialily9888@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=aulialily9888@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors block"
               >
                 aulialily9888@gmail.com
               </a>
               <p className="text-gray-400">
-                Telkom University<br />
+                Telkom University
+                <br />
                 Bandung, Indonesia
               </p>
             </div>
@@ -102,8 +109,10 @@ export function Footer() {
             <p className="text-sm text-gray-400">
               © {currentYear} Aulia Ramadhani. All rights reserved.
             </p>
+
             <p className="text-sm text-gray-400 flex items-center gap-2">
-              Built with <Heart className="h-4 w-4 text-red-500" /> using React & Tailwind CSS
+              Built with <Heart className="h-4 w-4 text-red-500" /> using React
+              & TypeScript
             </p>
           </div>
         </div>
