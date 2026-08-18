@@ -76,8 +76,8 @@ export function PortfolioSection() {
 
       featured: true,
 
-      github: "",
-      demo: "",
+      github: "https://github.com/RayhanSyailendra/CyberFusion",
+      demo: "https://drive.google.com/file/d/1eMla4KkrG6NjS1ivJ6fdAzLsE1cyhp7S/view",
 
       categories: [
         /* =================================================
@@ -323,7 +323,7 @@ export function PortfolioSection() {
 
       featured: false,
 
-      github: "",
+      github: "https://github.com/CPS-TelU/fe-sijaga",
       demo: "",
 
       categories: [
@@ -411,7 +411,7 @@ export function PortfolioSection() {
 
       featured: false,
 
-      github: "",
+      github: "https://github.com/citraakusumadewi/BOOSTIFY-FE",
       demo: "",
 
       categories: [
@@ -758,7 +758,7 @@ export function PortfolioSection() {
                               rel="noopener noreferrer"
                             >
                               <Github className="mr-2 h-4 w-4" />
-                              GitHub
+                              Source Code
                             </a>
                           </Button>
                         )}
@@ -771,7 +771,7 @@ export function PortfolioSection() {
                               rel="noopener noreferrer"
                             >
                               <ExternalLink className="mr-2 h-4 w-4" />
-                              Live Demo
+                              Demo Video
                             </a>
                           </Button>
                         )}
