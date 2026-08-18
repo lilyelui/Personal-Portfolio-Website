@@ -120,13 +120,16 @@ export function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="font-medium text-white mb-4">Contact</h4>
+
             <div className="space-y-3">
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=aulialily9888@gmail.com"
-                className="text-gray-400 hover:text-white transition-colors block"
+              <button
+                type="button"
+                onClick={openEmail}
+                className="text-gray-400 hover:text-white transition-colors block text-left"
               >
                 aulialily9888@gmail.com
-              </a>
+              </button>
+
               <p className="text-gray-400">
                 Telkom University
                 <br />
