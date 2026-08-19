@@ -123,39 +123,53 @@ export function AboutSection() {
         </div>
 
         {/* About Content */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
-          {/* Who I Am */}
-          <div>
-            <h3 className="mb-6 text-gray-900">Who I Am</h3>
+        <div className="space-y-12 mb-20">
+          {/* Top Row */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Who I Am */}
+            <div>
+              <h3 className="mb-6 text-gray-900">Who I Am</h3>
 
-            <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p>
-                I&apos;m a Telecommunications Engineering graduate from Telkom
-                University with hands-on experience in software development,
-                system analysis and design, backend development, API
-                integration, and database-driven applications.
-              </p>
-
-              <p>
-                I have experience working across different stages of software
-                development, from understanding requirements and designing
-                system workflows to implementing frontend and backend
-                functionality, integrating APIs, managing databases, and testing
-                software components.
-              </p>
-
-              <p>
-                In my projects, I have developed system designs using ERD, DFD,
-                flowcharts, and UML diagrams, including Use Case, Activity, and
-                Sequence Diagrams. I have also worked with AI-powered
-                applications, including integrating a Large Language Model (LLM)
-                into the Cyber Fusion platform to support contextual threat
-                analysis.
-              </p>
+              <div className="text-gray-600 leading-relaxed">
+                <p>
+                  I&apos;m a Telecommunications Engineering graduate from Telkom
+                  University with hands-on experience in software development
+                  across professional, research, and full-stack projects.
+                  Experienced in building end-to-end applications spanning
+                  system design, frontend and backend development, REST API
+                  integration, database engineering, system integration, and
+                  testing. I also have experience in telecommunications
+                  technologies and networking using Cisco Packet Tracer, as well
+                  as ethical hacking and cybersecurity using Kali Linux, with
+                  additional experience in IoT, AI, and LLM integration.
+                </p>
+              </div>
             </div>
 
+            {/* Background & Experience */}
+            <div>
+              <h3 className="mb-6 text-gray-900">Background & Experience</h3>
+
+              <div className="text-gray-600 leading-relaxed">
+                <p>
+                  My experience spans professional software development,
+                  research, and laboratory projects, including work as a Full
+                  Stack Web Developer at PT Telkom Akses and Research Assistant
+                  at the Cyber Physical System Laboratory. I have contributed to
+                  enterprise, warehouse, equipment management, attendance, and
+                  cybersecurity applications, with responsibilities covering
+                  system design, database modeling, frontend and backend
+                  development, API integration, testing, debugging, and system
+                  integration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Row */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
             {/* Areas of Interest */}
-            <div className="mt-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
               <h4 className="text-sm uppercase tracking-wide text-gray-700 mb-4">
                 Areas of Interest
               </h4>
@@ -179,40 +193,12 @@ export function AboutSection() {
                 ))}
               </div>
             </div>
-          </div>
-
-          {/* Background & Experience */}
-          <div>
-            <h3 className="mb-6 text-gray-900">Background & Experience</h3>
-
-            <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p>
-                My experience spans professional software development, research,
-                and laboratory-based projects. I have worked as a Full Stack Web
-                Developer at PT Telkom Akses and as a Research Assistant at the
-                Cyber Physical System Laboratory.
-              </p>
-
-              <p>
-                Through these experiences, I have contributed to enterprise
-                applications, warehouse management systems, equipment management
-                systems, attendance applications, and cybersecurity platforms.
-              </p>
-
-              <p>
-                My responsibilities have included system analysis and design,
-                database modeling, frontend and backend implementation, API
-                integration, external service integration, testing, debugging,
-                and system integration.
-              </p>
-            </div>
 
             {/* Quick Highlights */}
-            <div className="mt-8 grid grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-5 bg-blue-50 rounded-lg">
                 <div className="flex items-center gap-2 text-blue-700 mb-2">
                   <Layers className="h-5 w-5" />
-
                   <span className="font-medium">Specialization</span>
                 </div>
 
@@ -224,7 +210,6 @@ export function AboutSection() {
               <div className="p-5 bg-purple-50 rounded-lg">
                 <div className="flex items-center gap-2 text-purple-700 mb-2">
                   <BrainCircuit className="h-5 w-5" />
-
                   <span className="font-medium">Focus</span>
                 </div>
 
